@@ -1,0 +1,15 @@
+<mvc:View controllerName="guardengine.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <VBox id="vBox" class="sapUiSmallMargin">
+                <Label id="labelInputText" text="Enter Text:" />
+                <Input id="inputText" placeholder="Type something..." width="100%" />
+                <Button id="btnInputText" text="Send to Backend" press="onSendPress" type="Emphasized" class="sapUiSmallMarginTop" />
+                <Label id="labelResponseText" text="Response:" class="sapUiMediumMarginTop" />
+                <Text id="resultText" text="No data received yet." />
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
